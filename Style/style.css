@@ -6,7 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+ 
 @font-face {
     font-family: 'beatrice_displaybold_italic';
     src: url('beatricedisplay-boldit-webfont.woff2') format('woff2'),
@@ -14,7 +14,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+ 
 @font-face {
     font-family: 'beatriceregular';
     src: url('beatrice-regular-webfont.woff2') format('woff2'),
@@ -75,10 +75,10 @@ body {
     margin:0;
     background:white;
     color:#FF00BA;
-    font-family:beatriceregular;
+    font-family:beatricelight;
     font-size:11pt;
     font-kerning:normal;
-    line-height:14pt;
+    line-height:14.5pt;
     padding: 0px;
     overflow-x:hidden;
     cursor: -webkit-image-set(url(../Logos/arrow.svg) 2.5x ) 33 19, auto;
@@ -124,6 +124,7 @@ footer  {
     padding-left:1em;
     padding-top:1em;
     padding-bottom:1em;
+    line-height:13pt;
 /*    border:2px solid #FF00BA;
     border-radius:2px;*/
 }
@@ -133,21 +134,31 @@ h1 {
     font-size:75px;
     letter-spacing:1px;
     line-height: 75px;
-    margin-top: 0px;
     z-index:-6;
     mix-blend-mode: multiply;
+    margin:0px;
 }
 
 h2 {
-    font-size:2.1vw;
+    font-size:1.75em;
     line-height:1.25em;
     font-kerning:auto;
-    font-family:'beatricelight';
+    font-family:'beatriceregular';
+    margin:0px;
+    margin-top:15px;
 }
 
 h3 {
+    font-family:beatricelight_italic;
     font-size:11pt;
     line-height:16pt;
+    margin:0px;
+    margin-top:0px;
+}
+
+h4{
+    margin:0px;
+    margin-top:1em;
 }
 
 ul{
@@ -205,28 +216,30 @@ ul{
 
 #sshelf01 {
     margin-top:13.5em;
-/*        z-index:10;
-*/}
+}
 
 #sshelf02 {
-/*    margin-top:-67px;
-*/    margin-top:-2px;
-/*        z-index:10;
-*/
+    margin-top:-2px;
 }
 
 #sshelf03 {
-/*    margin-top:-67px;
-*/    margin-top:-2px;
-/*        z-index:10;
-*/
+    margin-top:-2px;
 }
 
-#sshelf03-5 {
-/*    margin-top:-67px;
-*/    margin-top:-2px;
-/*        z-index:10;
-*/
+#sshelf03-1 {
+    margin-top:-2px;
+}
+
+#sshelf03-2 {
+    margin-top:-2px;
+}
+
+#sshelf03-3 {
+    margin-top:-2px;
+}
+
+#sshelf03-4 {
+    margin-top:-2px;
 }
 
 #sshelf04 {
@@ -244,6 +257,9 @@ ul{
 #about {
     line-height:1.5em;
     color:white;
+    font-size:2.12vw;
+    font-family:beatricelight;
+    padding-bottom:15px;
 }
 
 #rules {
@@ -381,27 +397,7 @@ ul{
     mix-blend-mode: multiply;
 }
 
-.thumb{
-    margin-bottom:-4px;   
-    max-width:100%;
-    max-height:26vw;
-    height:auto;
-/*    -webkit-filter: grayscale(100%);*/
-    opacity:1;
-/*    mix-blend-mode: screen;
-*/}
-
-/*.thumb2{
-    max-width:40vw;
-    width:20vw;
-    height:100%;
-    max-height:25vw;
-    opacity:0;
-}*/
-
 .book{
-    /*position:relative;*/
-    /*display:inline-block;*/
     vertical-align:bottom;
     /*background-color:#FF00BA;
     mix-blend-mode: multiply;*/
@@ -409,8 +405,16 @@ ul{
     box-shadow: 0px -5px 20px -5px lightgray;
 }
 
-/* this is the interior pop up section for every book */
+.thumb{
+    margin-bottom:-4px;   
+    max-width:100%;
+    height:auto;
+/*    -webkit-filter: grayscale(100%);*/
+    opacity:1;
+/*    mix-blend-mode: screen;
+*/}
 
+/* this is the interior pop up section for every book */
 .hidden {
     display:none;
     width:auto;
@@ -462,6 +466,10 @@ ul{
     max-width:14vw;
 }
 
+#type60{
+    max-width:12vw;
+}
+
 #aiga1967{
     max-width:17vw;
 }
@@ -470,7 +478,7 @@ ul{
     max-width:14.5vw;
 }
 
-#dabest{
+#debest{
     max-width:17vw;
 }
 
@@ -488,10 +496,16 @@ ul{
 
 #tshirt{
     box-shadow:none;
+    max-width:70vw;
 }
 
 #livorno{
     box-shadow:none;
+    max-width:35vw;
+}
+
+#basictailoring{
+    max-width:19vw;
 }
 
 #drawpaint{
@@ -515,8 +529,24 @@ ul{
     max-width:12vw;
 }
 
+#diagrams{
+    max-width:16vw;
+}
+
 #uncorporate{
     max-width:17.5vw;
+}
+
+#NYC-Atlas{
+    max-width:16vw;
+}
+
+#TypeImageMes{
+    max-width:21vw;
+}
+
+#formist{
+    max-width:18vw;
 }
 
 #statement {
@@ -574,7 +604,7 @@ ul{
 #shapeofdesign{
     max-width:11.5vw;
 }
-
+ 
 #nursehilary{
     max-width:10vw;
 }
@@ -597,4 +627,11 @@ ul{
 
 #jimmyrobert{
     max-width:12.9vw;
+}
+
+#rose{
+    max-width:30vw;
+    box-shadow:none;
+    margin-bottom:-330px; 
+    mix-blend-mode: multiply;
 }
