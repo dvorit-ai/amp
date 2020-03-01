@@ -598,7 +598,7 @@ ul{
 }
 
 #gradexform{
-    max-width:18vw;
+    max-width:17.5vw;
 }
 
 #shapeofdesign{
@@ -634,4 +634,49 @@ ul{
     box-shadow:none;
     margin-bottom:-330px; 
     mix-blend-mode: multiply;
+}
+
+#mirrorbarcode{
+    max-width:12vw;
+}
+
+#colourink{
+    max-width:10vw;
+}
+
+#ninetynineU{
+    max-width:17vw;
+}
+
+#realfolkblues{
+    max-width:12.5vw;
+}
+
+#designthinkers{
+    max-width:15vw;
+}
+
+#anewtradition{
+    max-width:19vw;
+}
+
+#holestory{
+    max-width:16vw;
+}
+
+#businesscards{
+    max-width:19vw;
+    box-shadow:none;
+}
+
+#gradex2014{
+    max-width:14.5vw;
+}
+
+#athame{
+    max-width:14vw;
+}
+
+#arrivals{
+    max-width:18.45vw;
 }
