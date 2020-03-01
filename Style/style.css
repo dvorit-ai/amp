@@ -276,7 +276,7 @@ ul{
     margin-top:15px;
     position:absolute;
     width:1.75vw;
-    z-index:-4;
+    z-index:0;
 }
 
 #frank01{
@@ -285,7 +285,7 @@ ul{
 }
 
 #frank02{
-    left: calc(90vw - 10px);
+    left: calc(90vw - 9px);
     margin-top:25px;
 }
 
@@ -295,7 +295,7 @@ ul{
 }
 
 #frank04{
-    left: calc(90vw - 10px);
+    left: calc(90vw - 9px);
     margin-top:25px;
 }
 
@@ -305,7 +305,7 @@ ul{
 }
 
 #frank06{
-    left: calc(90vw - 10px);
+    left: calc(90vw - 9px);
     margin-top:25px;
 }
 
@@ -315,7 +315,7 @@ ul{
 }
 
 #frank08{
-    left: calc(90vw - 10px);
+    left: calc(90vw - 9px);
     margin-top:25px;
 }
 
@@ -679,4 +679,8 @@ ul{
 
 #arrivals{
     max-width:18.45vw;
+}
+
+#specimens{
+    max-width:13vw;
 }
