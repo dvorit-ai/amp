@@ -632,7 +632,7 @@ ul{
 #rose{
     max-width:30vw;
     box-shadow:none;
-    margin-bottom:-330px; 
+    margin-bottom:-23vw;
     mix-blend-mode: multiply;
 }
 
@@ -683,4 +683,28 @@ ul{
 
 #specimens{
     max-width:13vw;
+}
+
+#lostsheep{
+    max-width:30vw;
+}
+
+#pixels{
+    max-width:23vw;
+}
+
+#machinetakeover{
+    max-width:12vw;
+}
+
+#journey{
+    max-width:9vw;
+}
+
+#interacting{
+    max-width:11vw;
+}
+
+#breakitdown{
+    max-width:14vw;
 }
