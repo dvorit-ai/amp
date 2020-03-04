@@ -708,3 +708,22 @@ ul{
 #breakitdown{
     max-width:14vw;
 }
+
+@media (max-width:1000px) {
+/*
+    body {
+        background:blue;
+    }*/
+
+    .frankenstein {
+        display:none;
+    }
+    .navigation {
+        position:static;
+    }
+
+    .sshelf,
+    .sshelf-bar {
+        width:100vw;
+    }
+}
