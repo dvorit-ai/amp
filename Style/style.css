@@ -84,12 +84,12 @@ body {
     cursor: -webkit-image-set(url(../Logos/arrow.svg) 2.5x ) 33 19, auto;
 }
 
-#masked{
+/*#masked{
     position:fixed;
     left:40vw;
     top:33vw;
     z-index:100000;
-}
+}*/
 
 a {
     color:#FF00BA;
@@ -709,21 +709,129 @@ ul{
     max-width:14vw;
 }
 
-@media (max-width:1000px) {
-/*
-    body {
-        background:blue;
-    }*/
+@media (max-width:975px){
 
-    .frankenstein {
+    .sshelf,
+    .sshelfpink{
+        margin-left: 15vw;
+    }
+
+    .sshelf-bar,
+    .sshelfpink-bar{
+        margin-left: 13vw;
+        width:84vw;
+
+    }
+
+    .frankenstein,
+    .frankensteinpink{
         display:none;
     }
+}
+
+/*END OF TOO NARROW CSS*/
+
+/*BEGINNING OF MOBILE DEVICE CSS*/
+
+@media (max-width:480px) {
+
+    html, body {
+        overflow-x: hidden;
+        background:#FF00BA;
+    }
+
+    body {
+        position: relative;
+        color:white;
+    }
+
+    a{
+        color:yellow;
+    }
+
+    h1{
+        position:fixed;
+        font-size:60px;
+        line-height: 60px;
+        color:yellow;
+        z-index:0!important;
+        mix-blend-mode: multiply;
+    }
+
+    header,
+    footer{
+        position:fixed;
+        mix-blend-mode: normal;
+        z-index:0!important;
+    }
+
     .navigation {
-        position:static;
+        position:fixed;
+        margin-top:-5vh;
+        z-index:0!important;
+    }
+
+    .dates-nav a{
+        display:block;
+        position:relative;
+        color:white;
+    }
+
+    li {
+        float:left;
     }
 
     .sshelf,
-    .sshelf-bar {
+    .sshelfpink{
+        position:relative;
         width:100vw;
+        background:white;
+        border-left:none;
+        border-right:none;
+        z-index:10!important;
+        mix-blend-mode:normal;
+        margin:auto;
     }
+
+    .sshelf-bar,
+    .sshelfpink-bar {
+        position:relative;
+        width:110vw;
+        margin-left:-5px;
+        z-index:10!important;
+        margin:auto;
+    }
+
+    .frankenstein,
+    .frankensteinpink {
+        display:none;
+    }
+
+    #sshelf01{
+        margin-top:17.5em;
+    }
+
+    #readingweek{
+        margin:auto;
+        left:4vw;
+        margin-top:60vh;
+        position:relative;
+        mix-blend-mode: normal;
+        z-index:50;
+        color:yellow;
+    }
+
+    .logo{
+        width:90vw;
+        margin-left:3vw;
+        top:35vh;
+        z-index:0;
+        position:fixed;
+        mix-blend-mode: multiply;
+/*        top:1.5vh;
+        left:2vw;*/
+    }
+
 }
+
+/*END OF MOBILE DEVICE CSS*/
