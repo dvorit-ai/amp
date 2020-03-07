@@ -112,7 +112,6 @@ footer  {
     right:1em;
     z-index:-5; 
     mix-blend-mode: multiply;
-
 }
 
 .navigation {
@@ -709,16 +708,19 @@ ul{
     max-width:14vw;
 }
 
+
+/*BEG OF TOO NARROW CSS*/
+
 @media (max-width:975px){
 
     .sshelf,
     .sshelfpink{
-        margin-left: 15vw;
+        margin-left: 14vw;
     }
 
     .sshelf-bar,
     .sshelfpink-bar{
-        margin-left: 13vw;
+        margin-left: 12vw;
         width:84vw;
 
     }
@@ -731,75 +733,86 @@ ul{
 
 /*END OF TOO NARROW CSS*/
 
-/*BEGINNING OF MOBILE DEVICE CSS*/
+/*BEG OF MOBILE DEVICE CSS*/
 
 @media (max-width:480px) {
 
     html, body {
         overflow-x: hidden;
-        background:#FF00BA;
-    }
+/*        background:#FF00BA;
+*/    }
 
     body {
         position: relative;
-        color:white;
+/*        color:white;
+*/        mix-blend-mode: multiply;
     }
 
-    a{
+/*    a{
         color:yellow;
-    }
+    }*/
 
     h1{
         position:fixed;
         font-size:60px;
         line-height: 60px;
-        color:yellow;
-        z-index:0!important;
+/*        color:yellow;
+*/      z-index:-10!important;
         mix-blend-mode: multiply;
     }
 
     header,
     footer{
         position:fixed;
+        z-index:-1!important;
         mix-blend-mode: normal;
-        z-index:0!important;
+        white-space:nowrap;
     }
 
     .navigation {
         position:fixed;
         margin-top:-5vh;
-        z-index:0!important;
+        z-index:-1!important;
     }
 
     .dates-nav a{
         display:block;
         position:relative;
-        color:white;
-    }
+/*        color:white;
+*/    }
 
     li {
         float:left;
+        margin-right:17px;
     }
 
     .sshelf,
     .sshelfpink{
-        position:relative;
         width:100vw;
-        background:white;
         border-left:none;
         border-right:none;
         z-index:10!important;
         mix-blend-mode:normal;
         margin:auto;
+        position:static;
     }
 
     .sshelf-bar,
     .sshelfpink-bar {
-        position:relative;
         width:110vw;
         margin-left:-5px;
         z-index:10!important;
         margin:auto;
+    }
+
+    .sshelfpink{
+        height:35vh;
+    }
+
+    #about {
+        line-height:1.4em;
+        font-size:1.1em;
+        padding-bottom:0px;
     }
 
     .frankenstein,
@@ -812,26 +825,34 @@ ul{
     }
 
     #readingweek{
-        margin:auto;
-        left:4vw;
-        margin-top:60vh;
+        margin-left:25vw;
+        margin-top:36vh;
+/*        margin:auto;
+        margin-top:30vh;
         position:relative;
         mix-blend-mode: normal;
         z-index:50;
-        color:yellow;
+        color:yellow;*/
     }
 
     .logo{
         width:90vw;
         margin-left:3vw;
         top:35vh;
-        z-index:0;
+        z-index:-1;
         position:fixed;
-        mix-blend-mode: multiply;
 /*        top:1.5vh;
         left:2vw;*/
     }
 
+    .desktop-break{
+        display:none;
+    }
+
+/* this is the interior pop up section for every book */
+    .hidden {
+        color:#FF00BA;
+    }
 }
 
 /*END OF MOBILE DEVICE CSS*/
