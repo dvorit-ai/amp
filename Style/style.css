@@ -6,7 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
- 
+    
 @font-face {
     font-family: 'beatrice_displaybold_italic';
     src: url('beatricedisplay-boldit-webfont.woff2') format('woff2'),
@@ -112,6 +112,10 @@ footer  {
     right:1em;
     z-index:-5; 
     mix-blend-mode: multiply;
+}
+
+.close {
+    display:none;
 }
 
 .navigation {
@@ -266,6 +270,8 @@ ul{
     color:yellow;
     padding-right:26.3vw;
 }
+
+
 
 .frankenstein {
     background:#FF00BA;
@@ -730,6 +736,23 @@ ul{
     .frankensteinpink{
         display:none;
     }
+
+        .close {
+        display:block;
+        font-size:3em;
+        padding-top:0.4em;
+        float:right;
+        color:yellow;
+    }
+
+
+    .hidden {
+        left:50px!important;                
+        top:50!important;
+
+/*        width:100vw!important;
+*/      
+    }
 }
 
 /*END OF TOO NARROW CSS*/
@@ -737,6 +760,8 @@ ul{
 /*BEG OF MOBILE DEVICE CSS*/
 
 @media (max-width:480px) {
+
+
 
     html, body {
         overflow-x: hidden;
@@ -749,16 +774,11 @@ ul{
 */        mix-blend-mode: multiply;
     }
 
-/*    a{
-        color:yellow;
-    }*/
-
     h1{
         position:fixed;
         font-size:60px;
         line-height: 60px;
-/*        color:yellow;
-*/      z-index:-10!important;
+        z-index:-10!important;
         mix-blend-mode: multiply;
     }
 
@@ -851,9 +871,23 @@ ul{
         display:none;
     }
 
-/* this is the interior pop up section for every book */
+    .close {
+        display:block;
+        font-size:3em;
+        padding-top:0.4em;
+        float:right;
+        color:yellow;
+    }
+
+
     .hidden {
-        color:#FF00BA;
+        top:auto!important;
+        left:0!important;                
+        bottom:0px!important;
+        width:100vw!importnt;
+        box-sizing:border-box;
+        border-right:none;
+        border-left:none;
     }
 }
 

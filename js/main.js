@@ -8,4 +8,15 @@
 				})
 		})
 
+$(".close").click(function(){
+	$(this)
+		.parent(".hidden")
+		.attr("style","")
+		.css({
+		"display":"none"
+		})
 
+	// setTimeout(function(){
+	// 	$(".hidden").attr("style","")
+	// },500)
+	})
