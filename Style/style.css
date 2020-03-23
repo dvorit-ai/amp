@@ -170,6 +170,14 @@ ul{
     padding: 0;
 }
 
+#extratitle{
+    position:absolute;
+    top:98px;
+    right:9.5vw;
+    z-index:-5;
+    mix-blend-mode: multiply;
+}
+
 .dates-nav a{
     text-decoration:none;
     padding:5px 5px 2px 2px;
@@ -260,7 +268,7 @@ ul{
 #about {
     line-height:1.5em;
     color:white;
-    font-size:2.12vw;
+    font-size:2.1vw;
     font-family:beatricelight;
     padding-bottom:15px;
 }
@@ -270,7 +278,6 @@ ul{
     color:yellow;
     padding-right:26.3vw;
 }
-
 
 
 .frankenstein {
@@ -495,6 +502,10 @@ ul{
     max-width:18vw;
 }
 
+#oscar{
+    max-width:18vw;
+}
+
 #exoticpet{
     max-width:17vw;
 }
@@ -638,6 +649,10 @@ ul{
     mix-blend-mode: multiply;
 }
 
+#seventy-eight{
+    max-width:11vw;
+}
+
 #mirrorbarcode{
     max-width:12vw;
 }
@@ -715,6 +730,37 @@ ul{
     max-width:14vw;
 }
 
+#seaofgrief{
+    max-width:11vw;
+}
+
+#vernacular{
+    max-width:13vw;
+}
+
+#oppositeofdis{
+    max-width:15.03vw;
+}
+
+#mfathesis{
+    max-width:15vw;
+}
+
+#saveusall{
+    max-width:32vw;
+}
+
+#ilikethis{
+    max-width:12vw;
+}
+
+#daysofsummer{
+    max-width:13vw;
+}
+
+#play{
+    max-width:11vw;
+}
 
 /*BEG OF TOO NARROW CSS*/
 
@@ -749,13 +795,15 @@ ul{
     .hidden {
         left:50px!important;                
         top:50!important;
+    }
 
-/*        width:100vw!important;
-*/      
+    #extratitle{
+        right:4.2vw;
     }
 }
 
 /*END OF TOO NARROW CSS*/
+
 
 /*BEG OF MOBILE DEVICE CSS*/
 
@@ -799,12 +847,12 @@ ul{
     .dates-nav a{
         display:block;
         position:relative;
-/*        color:white;
-*/    }
+    }
 
     li {
         float:left;
-        margin-right:17px;
+        margin-right:20px;
+        padding-right:15px;
     }
 
     .sshelf,
@@ -825,10 +873,11 @@ ul{
         margin-left:-5px;
         z-index:10!important;
         margin:auto;
+        border:none;
     }
 
     .sshelfpink{
-        height:35vh;
+        height:auto;
     }
 
     #about {
@@ -879,7 +928,6 @@ ul{
         color:yellow;
     }
 
-
     .hidden {
         top:auto!important;
         left:0!important;                
@@ -888,6 +936,10 @@ ul{
         box-sizing:border-box;
         border-right:none;
         border-left:none;
+    }
+
+     #extratitle{
+        display:none;
     }
 }
 
