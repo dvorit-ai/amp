@@ -775,19 +775,16 @@ ul{
 
 /*BEG of corona virus*/
 
-.x img{
-    width:7vw;
-    height:auto;
-}
-
 .x {
     z-index:100000;
     position:fixed;
     top:0;
     margin:0;
+    width:50px;
   -webkit-animation: x 7s linear infinite alternate;
           animation: x 7s linear infinite alternate;
 }
+
 
 .y {
   -webkit-animation: y 3s linear infinite alternate;
