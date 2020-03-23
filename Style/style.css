@@ -399,6 +399,11 @@ ul{
     margin-top:42vh;
 }
 
+#coronaweek{
+    padding-bottom:10vw;
+    text-align:center;
+}
+
 .logo{
     width:70vw;
     position:fixed;
@@ -762,6 +767,60 @@ ul{
     max-width:11vw;
 }
 
+#donottouch{
+    max-width:23vw;
+    box-shadow:none;
+    bottom:10vh;
+}
+
+/*BEG of corona virus*/
+
+.x img{
+    width:7vw;
+    height:auto;
+}
+
+.x {
+    z-index:100000;
+    position:fixed;
+    top:0;
+    margin:0;
+  -webkit-animation: x 7s linear infinite alternate;
+          animation: x 7s linear infinite alternate;
+}
+
+.y {
+  -webkit-animation: y 3s linear infinite alternate;
+          animation: y 3s linear infinite alternate;
+}
+
+@-webkit-keyframes x {
+  100% {
+    -webkit-transform: translateX(calc(100vw - 100px));
+            transform: translateX(calc(100vw - 100px));
+  }
+}
+
+@keyframes x {
+  100% {
+    -webkit-transform: translateX(calc(100vw - 100px));
+            transform: translateX(calc(100vw - 100px));
+  }
+}
+@-webkit-keyframes y {
+  100% {
+    -webkit-transform: translateY(calc(100vh - 100px));
+            transform: translateY(calc(100vh - 100px));
+  }
+}
+@keyframes y {
+  100% {
+    -webkit-transform: translateY(calc(100vh - 100px));
+            transform: translateY(calc(100vh - 100px));
+  }
+}
+/*END of corona virus... i wish*/
+
 /*BEG OF TOO NARROW CSS*/
 
 @media (max-width:975px){
@@ -799,6 +858,10 @@ ul{
 
     #extratitle{
         right:4.2vw;
+    }
+
+    h2{
+        font-size:3vw !important;
     }
 }
 
