@@ -770,10 +770,10 @@ ul{
 #donottouch{
     max-width:23vw;
     box-shadow:none;
-    bottom:10vh;
+    margin-bottom:25px;
 }
 
-/*BEG of corona virus*/
+/*
 
 .x img{
     width:7vw;
@@ -818,8 +818,38 @@ ul{
     -webkit-transform: translateY(calc(100vh - 100px));
             transform: translateY(calc(100vh - 100px));
   }
+}*/
+
+
+
+/* BEG OF CORONA VIRUS */
+
+.virus {
+    width: 100px;
+    height:100px;
+    position:fixed;
 }
-/*END of corona virus... i wish*/
+
+
+.virus img {
+    max-width:100px;
+}
+
+
+.holder {
+    position:fixed; 
+    width:100vw; 
+    height:100vh;
+    pointer-events:none;
+}
+
+/*END OF CORONA VIRUS... i wish*/
+
+
+
+
+
+
 
 /*BEG OF TOO NARROW CSS*/
 
