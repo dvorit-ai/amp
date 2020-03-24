@@ -23,6 +23,7 @@ $(".close").click(function(){
 
 	
 //start of virus 
+//pulled from https://codepen.io/stezu/pen/cmLrI 
 
 $(".virus").each(function(){
 	randomTop = Math.floor(Math.random()*$(window).height())
