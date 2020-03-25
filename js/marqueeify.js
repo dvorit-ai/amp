@@ -49,11 +49,23 @@
 			getSizes();
 
 			if (settings.horizontal) {
-				move.right();
+				var r = Math.random(); //generates a random number between 0 and 1
+				if (r > 0.5) {		   // if more than 0.5 (50% chance)
+					move.left();	   // then move left
+				} else {			   // otherwise (50% chance)
+					move.right();	   // then move right
+				}
 			}
+
 			if (settings.vertical) {
-				move.down();
+				var r = Math.random(); //generates a random number between 0 and 1
+				if (r > 0.5) {		   // if more than 0.5 (50% chance)
+					move.up();	   	   // then move up
+				} else {			   // otherwise (50% chance)
+					move.down();	   // then move down
+				}
 			}
+
 
       // Make that shit responsive!
       $(window).resize( function() {
