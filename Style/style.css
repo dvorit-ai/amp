@@ -67,8 +67,15 @@
 
 /*highlight text colour*/
 
-::-moz-selection { background: yellow; }
-::selection { background: yellow; }
+::-moz-selection { 
+    background: rgba(255, 255, 0, 0.996);
+    color:#FF00BA; 
+}
+::selection { 
+    background: rgba(255, 255, 0, 0.996);
+    color:#FF00BA; 
+}
+
 /*highlight text colour end*/
 
 body {
@@ -122,7 +129,7 @@ footer  {
     position:fixed;
     left:-2px;
     top:12em;
-    z-index:1000 !important;
+    z-index:100 !important;
 /*    background:white;*/  
     padding-left:1em;
     padding-top:1em;
@@ -149,6 +156,7 @@ h2 {
     font-family:'beatriceregular';
     margin:0px;
     margin-top:15px;
+    mix-blend-mode:normal;
 }
 
 h3 {
@@ -266,11 +274,11 @@ ul{
 }
 
 #about {
-    line-height:1.5em;
+    line-height:3vw !important;
     color:white;
-    font-size:2.1vw;
+    font-size:2.1vw !important;
     font-family:beatricelight;
-    padding-bottom:15px;
+    padding-bottom:1vw;
 }
 
 #rules {
@@ -291,57 +299,25 @@ ul{
     z-index:0;
 }
 
-#frank01{
-    left: calc(10vw - 1.75vw - 5px);
-    margin-top:25px;
-}
-
-#frank02{
-    left: calc(90vw - 9px);
-    margin-top:25px;
-}
-
-#frank03{
-    left: calc(10vw - 1.75vw - 5px);
-    margin-top:25px;
-}
-
-#frank04{
-    left: calc(90vw - 9px);
-    margin-top:25px;
-}
-
-#frank05{
-    left: calc(10vw - 1.75vw - 5px);
-    margin-top:25px;
-}
-
-#frank06{
-    left: calc(90vw - 9px);
-    margin-top:25px;
-}
-
+#frank01,
+#frank03,
+#frank05,
 #frank07{
-    left: calc(10vw - 1.75vw - 5px);
+/*    left: calc(10vw - 1.75vw - 5px);
+*/    
+    left: calc(9.55vw - 1.75vw);
     margin-top:25px;
 }
 
+#frank02,
+#frank04,
+#frank06,
 #frank08{
-    left: calc(90vw - 9px);
+/*    left: calc(90vw - 9px);
+*/   
+    left: calc(89.3vw); 
     margin-top:25px;
 }
-
-/*.frankenstein {
-    background:#FF00BA;
-    border-radius:2px;
-    height:3.5vw;
-    margin:auto;
-    margin-top:15px;
-    width:83vw;
-    z-index:-100;
-}
-*/
-
 
 /*START OF PINK SHELF FOR ABOUT PAGE*/
 
@@ -770,7 +746,7 @@ ul{
 #donottouch{
     max-width:23vw;
     box-shadow:none;
-    margin-bottom:25px;
+    margin-bottom:15px;
 }
 
 /*
@@ -824,15 +800,21 @@ ul{
 
 /* BEG OF CORONA VIRUS */
 
-.virus {
-    width: 100px;
+.virus {  
+/*  width:100px;
     height:100px;
+*/
     position:fixed;
+    z-index:1000 !important;
 }
 
 
 .virus img {
-    max-width:100px;
+    width:auto;
+    max-width:100%;
+    height:auto;
+    max-height:100%;
+    z-index:1000 !important;
 }
 
 
@@ -841,6 +823,8 @@ ul{
     width:100vw; 
     height:100vh;
     pointer-events:none;
+    z-index:1000 !important;
+    mix-blend-mode:normal;
 }
 
 /*END OF CORONA VIRUS... i wish*/
@@ -864,15 +848,36 @@ ul{
     .sshelfpink-bar{
         margin-left: 12vw;
         width:84vw;
-
     }
 
+    .sshelfpink{
+        height:auto;
+    }
+/*
     .frankenstein,
     .frankensteinpink{
         display:none;
+    }*/
+
+
+    #frank01,
+    #frank03,
+    #frank05,
+    #frank07,
+    #frankpink01{
+    left: calc(14.2vw - 1.75vw);
     }
 
-        .close {
+    #frank02,
+    #frank04,
+    #frank06,
+    #frank08,
+    #frankpink02{
+        left: calc(93.8vw);
+    }
+
+
+    .close {
         display:block;
         font-size:3em;
         padding-top:0.4em;
