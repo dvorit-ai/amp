@@ -806,6 +806,17 @@ ul{
 */
     position:fixed;
     z-index:1000 !important;
+    transform: rotate(20deg);
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 
@@ -824,7 +835,6 @@ ul{
     height:100vh;
     pointer-events:none;
     z-index:1000 !important;
-    mix-blend-mode:normal;
 }
 
 /*END OF CORONA VIRUS... i wish*/

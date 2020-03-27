@@ -36,7 +36,7 @@ $(".virus").each(function(){
 			"top":randomTop,
 			"left":randomLeft,
 			"width":randomWidth,
-			"height":randomWidth
+			"height":randomWidth,
 		})
 		.marqueeify({
 			"speed":randomSpeed
@@ -44,15 +44,11 @@ $(".virus").each(function(){
 
 })
 
-// $(".virus img").each(function(){
-// 	randomWidth = Math.floor(Math.random()*80)+50
 
-// 	$(this)
-// 		.css({
-// 			"width":randomWidth,
-// 		});
 
-// })
+$(".virus").click(function(){
+  $(".virus").clone().appendTo("body");
+});
 
 
 
