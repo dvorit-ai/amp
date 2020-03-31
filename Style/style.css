@@ -182,7 +182,7 @@ ul{
     position:absolute;
     top:98px;
     right:9.5vw;
-    z-index:-5;
+    z-index:0;
     mix-blend-mode: multiply;
 }
 
@@ -193,6 +193,19 @@ ul{
     display:inline-block;
     width:50px;
 }
+
+#ghosted-poster{
+    z-index:-1 !important;
+    mix-blend-mode: normal;
+    position:fixed;
+    left:35vw;
+    top:10em;
+}
+
+#ghosted-poster img{
+    max-width:55vw;
+}
+
 
 .dates-nav a:hover{
     background:yellow;
@@ -749,6 +762,14 @@ ul{
     margin-bottom:15px;
 }
 
+#ghosted{
+    max-width:40vw;
+    box-shadow:none;
+    margin-bottom:5px;
+}
+
+
+
 /*
 
 .x img{
@@ -804,8 +825,9 @@ ul{
 /*  width:100px;
     height:100px;
 */
+    left:100px;
     position:fixed;
-    z-index:1000 !important;
+    z-index:10000 !important;
     transform: rotate(20deg);
     animation: rotate 5s infinite linear;
 }
@@ -825,7 +847,7 @@ ul{
     max-width:100%;
     height:auto;
     max-height:100%;
-    z-index:1000 !important;
+    z-index:10000 !important;
 }
 
 
@@ -903,6 +925,15 @@ ul{
 
     #extratitle{
         right:4.2vw;
+    }
+
+    #ghosted-poster{
+        top:11em;
+        left:15vw;
+    }
+
+    #ghosted-poster img{
+        max-width:80vw;
     }
 
     h2{
@@ -1018,7 +1049,7 @@ ul{
         width:90vw;
         margin-left:3vw;
         top:35vh;
-        z-index:-1;
+        z-index:-2;
         position:fixed;
 /*        top:1.5vh;
         left:2vw;*/
@@ -1047,6 +1078,20 @@ ul{
     }
 
      #extratitle{
+        display:none;
+    }
+
+
+    #ghosted-poster{
+        top:17em;
+        left:calc(50vw - 40vw);
+    }
+
+    #ghosted-poster img{
+        max-width:80vw;
+    }
+
+    #hidden-logo{
         display:none;
     }
 }

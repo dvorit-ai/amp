@@ -1,3 +1,6 @@
+
+
+
 	$(".book").mousemove(function(e){
 
 			$(this)
@@ -28,7 +31,7 @@ $(".close").click(function(){
 $(".virus").each(function(){
 	randomTop = Math.floor(Math.random()*$(window).height())
 	randomLeft = Math.floor(Math.random()*$(window).width())
-	randomSpeed = Math.floor(Math.random()*600)+200
+	randomSpeed = Math.floor(Math.random()*300)+150 //before it was *600 + 200
 	randomWidth = Math.floor(Math.random()*80)+50
 
 	$(this)
@@ -45,10 +48,9 @@ $(".virus").each(function(){
 })
 
 
-
 $(".virus").click(function(){
   $(".virus").clone().appendTo("body");
-});
+});	
 
 
 
