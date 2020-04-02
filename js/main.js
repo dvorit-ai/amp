@@ -1,7 +1,23 @@
 
 
+i = 0;
+while (i < 7) {
+	$("<img>")									//create empty imag element
+		.addClass("virus")						//add a class to this element
+		.attr("src","Logos/corona-virus.svg")	//add the attribute SRC to the element
+		.appendTo (".holder")					//add the element to the div .holder
 
-	$(".book").mousemove(function(e){
+	i++; //this is the short form of just saing "i = i + 1"
+}
+
+// here is a cleaner version
+
+// 		for (i=0;i<50,i++){
+// 			but im unsure how to use this properly
+// 		}
+
+
+$(".book").mousemove(function(e){
 
 			$(this)
 				.children(".hidden")
@@ -47,13 +63,23 @@ $(".virus").each(function(){
 
 })
 
-
-$(".virus").click(function(){
-  $(".virus").clone().appendTo("body");
-});	
-
-
-
 //end of virus 
+
+
+
+
+
+//below isn't working!!
+
+// $(".virus").click(function(){
+//   $(".virus").clone().appendTo("body");
+// });	
+
+
+window.onload = function () {
+    var element = document.getElementById('midtermvideo');
+    element.muted = "muted";
+}
+
 
 
