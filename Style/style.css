@@ -91,6 +91,10 @@ body {
     cursor: -webkit-image-set(url(../Logos/arrow.svg) 2.5x ) 33 19, auto;
 }
 
+.sadface{
+    cursor: -webkit-image-set(url(../Logos/arrow-sad.svg) 2.5x ) 33 19, auto !important;
+}
+
 /*.cursor-change{
     cursor: -webkit-image-set(url(../Logos/arrow-yellow.svg) 2.5x ) 33 19, auto !important;
 }*/
@@ -106,6 +110,10 @@ a {
     color:#FF00BA;
     text-decoration: none;
     cursor: -webkit-image-set(url(../Logos/logocursor.svg) 2.5x ) 33 19, pointer;
+}
+
+.sadface a{
+    cursor: -webkit-image-set(url(../Logos/logocursor-sad.svg) 2.5x ) 33 19, pointer !important;
 }
 
 header  {
