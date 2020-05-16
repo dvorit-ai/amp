@@ -360,6 +360,21 @@ ul{
 
 /*START OF PINK SHELF FOR ABOUT PAGE*/
 
+.sshelfabout {
+    background:white;
+    border:2px solid #FF00BA;
+    border-radius:2px;
+    width:80vw;
+    height:auto;
+    margin:auto;
+/*    left:20px;*/    
+    padding:1vw 1vw 0;
+    box-sizing:border-box;
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+
 .sshelfpink {
     background:#FF00BA;
     border:2px solid #FF00BA;
@@ -941,7 +956,8 @@ ul{
 
     .sshelf,
     .sshelfpink,
-    .sshelf-video{
+    .sshelf-video,
+    .sshelfabout{
         margin-left: 14vw;
     }
 
@@ -951,7 +967,8 @@ ul{
         width:84vw;
     }
 
-    .sshelfpink{
+    .sshelfpink,
+    .sshelfabout{
         height:auto;
     }
 /*
@@ -1058,7 +1075,8 @@ ul{
     }
 
     .sshelf,
-    .sshelfpink{
+    .sshelfpink,
+    .sshelfabout {
         width:100vw;
         height:35vw;
         border-left:none;
@@ -1089,7 +1107,8 @@ ul{
         border:none;
     }
 
-    .sshelfpink{
+    .sshelfpink,
+    .sshelfabout{
         height:auto;
     }
 
@@ -1145,11 +1164,12 @@ ul{
     .hidden {
         top:auto!important;
         left:0!important;                
-        bottom:0px!important;
+        bottom:-2px!important;
         width:100vw!important;
         box-sizing:border-box;
         border-right:none;
         border-left:none;
+        max-width:100vw;
     }
 
      #extratitle{
